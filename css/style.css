@@ -156,7 +156,13 @@ h6 {
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.04em;
-  color: #202020;
+  color: #202020 !important;
+}
+
+.header-body__logo:active,
+.header-body__logo:hover {
+  text-decoration: none;
+  color: #202020 !important;
 }
 
 .header-body__logo span {
@@ -451,7 +457,7 @@ h6 {
   line-height: 22px;
   letter-spacing: 0.075em;
   color: #202020;
-  margin: 26px 0 26px 16px;
+  margin: 26px 0 0 16px;
 }
 
 .gallery::-webkit-scrollbar {
@@ -915,6 +921,12 @@ body.lock {
   .header-body__btns {
     display: none;
   }
+
+  .gallery__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48.2%;
+            flex: 0 0 48.2%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1036,14 +1048,6 @@ body.lock {
 
   .gallery__item:nth-of-type(even) {
     margin: 75px 0 0 0;
-  }
-
-  .gallery__item:first-child {
-    margin: 0;
-  }
-
-  .gallery__item:nth-of-type(2) {
-    margin: 0;
   }
 }
 
